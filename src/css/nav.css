@@ -1,0 +1,134 @@
+
+
+
+/* Side Nav */
+
+.wrapper-nav .brand-name {
+    font-weight: 10em;
+    font-size: 40px;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}
+
+.menu-pointer {
+    /* width: 0; */
+    /* top: 0; */
+    font-size: 25px;
+    cursor: pointer;
+    color: #5b5b5b;
+    padding-right: 2em;
+}
+
+.close {
+    cursor: pointer;
+    color: #eae7dc;
+}
+
+.sm-wrapper {
+    margin-top: 80px;
+    font-weight: 100;
+}
+
+.sideMenu {
+    border-radius: 0 0 0 100px;
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #11100f;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-top: 1px;
+}
+
+
+.sideMenu a {
+    padding: 30px 8px 8px 32px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    display: block;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.sideMenu .close {
+    position: absolute;
+    top: 0;
+    /* right: 10px; */
+    font-size: 30px;
+    /* margin-left: 10px; */
+    color: #eae7dc;
+
+}
+
+/* Side Nav Hover */
+.sm-wrapper a:after {
+    z-index: 1;
+    position: absolute;
+    left: 0%;
+    width: 0;
+    height: 50px;
+    background: #ffac01;
+    content: '';
+    transition: width 0.25s ease-in-out;
+    text-decoration: none;
+}
+
+.sm-wrapper a:hover:after {
+    width: 10%;
+}
+
+.sm-wrapper a:hover {
+    text-decoration: none;
+    padding-left: 55px;
+    transition: 0.35s ease-in-out;
+    color: #ffac01;
+    transform: scale(1.1);
+}
+
+/* Contents */
+
+#pg-content {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+
+.logo {
+    top: 0;
+    /* left: 5px; */
+    padding: 0 0 0 62px;
+    /* text-align: center; */
+}
+
+
+
+.brand-name {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif;
+}
+
+.main-contents .wrapper-tb {
+    /* text-align: center; */
+    height: 100em;
+    width: 5em;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 19px 18px 48px -25px rgba(209, 217, 230, 0.45);
+    box-shadow: 0px 10px 13px -7px #000000, 19px 18px 48px -25px rgba(209, 217, 230, 0.45);
+    background: #ECF0F3;
+}
+
+.wrapper-nav {
+    justify-content: space-between;
+}
+
+.nav-wrapper {
+    border-radius: 1000px;
+    /* box-shadow: #000000; */
+    /* -webkit-box-shadow: -2px 13px 32px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 13px 32px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.50); */
+}
