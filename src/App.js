@@ -44,10 +44,10 @@ class App extends React.Component {
   toggleSM = () => {
     if (document !== null) {
       const width = document.getElementById("sideMenu").style.width;
-      const marginRight = document.getElementById("pg-content").style.marginRight;
+      const marginLeft = document.getElementById("pg-content").style.marginLeft;
 
-      document.getElementById("sideMenu").style.width = (width === "150px" ? "0" : "150px");
-      document.getElementById("pg-content").style.marginRight = (marginRight === "0" ? "0" : "0");
+      document.getElementById("sideMenu").style.width = (width === "175px" ? "0" : "175px");
+      document.getElementById("pg-content").style.marginLeft = (marginLeft === "0" ? "0" : "0");
     }
   }
 
@@ -75,16 +75,17 @@ class App extends React.Component {
           
           <Navbar className="nav-wrapper" style={{backgroundColor: "#FFFFFF", position: "sticky"}} fixed="top">
             <Container className="wrapper-nav">
-              <Navbar.Brand><span className="brand-name">Portfolio<span style={{color: "blue"}}>.</span></span></Navbar.Brand>
+            <div className="menu-pointer"  onClick={this.toggleSM}>&#9776;</div>
+            <Navbar.Brand><span className="brand-name">Portfolio<span style={{color: "blue"}}>.</span></span></Navbar.Brand>
               
             </Container>
-              <Navbar.Toggle />
+              {/* <Navbar.Toggle />
               <Navbar.Collapse className="justify-content-end">
                 <Navbar.Text>
-                  {/* Signed in as: <a href="#login">Mark Otto</a> */}
-                  <div className="menu-pointer"  onClick={this.toggleSM}>&#9776;</div>
+                 
+                  
                 </Navbar.Text>
-              </Navbar.Collapse>
+              </Navbar.Collapse> */}
           
           </Navbar>
             

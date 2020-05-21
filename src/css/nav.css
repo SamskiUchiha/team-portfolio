@@ -29,13 +29,13 @@
 }
 
 .sideMenu {
-    border-radius: 0 0 0 100px;
+    /* border-radius: 0 0 0 100px; */
     height: 100%;
     width: 0px;
     position: absolute;
     z-index: 1;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: #11100f;
     overflow: hidden;
     transition: 0.3s;
