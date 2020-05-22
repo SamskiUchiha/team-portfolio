@@ -58,15 +58,16 @@ class App extends React.Component {
           <div id="sideMenu" className="sideMenu">  
 
             <div className="sm-wrapper">
+            <div className="menu-pointer"  onClick={this.toggleSM}>&#9776;</div>
               {/* <div className="logo"><img style={{height:'100px',width:'100px'}} src={logo} alt="logo_image" /></div> */}
               
               <Link className="nav-link" to="/"> Home</Link>
-              <Link className="nav-link" to="/about"> About</Link>
+              {/* <Link className="nav-link" to="/about"> About</Link> */}
               <Link className="nav-link" to="/samPage"> Sam</Link>
               <Link className="nav-link" to="/santiPage"> Santiago</Link>
               <Link className="nav-link" to="/martinPage"> Martin</Link>
               <Link className="nav-link" to="/antonioPage"> Antonio</Link>
-              <Link className="nav-link" to="/contact"> Contact</Link>
+              {/* <Link className="nav-link" to="/contact"> Contact</Link> */}
             </div>
           </div>
 
@@ -94,8 +95,8 @@ class App extends React.Component {
             {/* <img style={{height:'100px',width:'300px'}} src={logo} alt="logo_image" /> */}
               {/* {/* <Route path="/" exact render={() => <WorkflowsPage title={this.state.Workflows.title} />} /> */}
               <Route path="/" exact render={() => <HomePage />} />
-              <Route path="/about" exact render={() => <AboutPage />} />
-              <Route path="/contact" exact render={() => <ContactPage />} />
+              {/* <Route path="/about" exact render={() => <AboutPage />} /> */}
+              {/* <Route path="/contact" exact render={() => <ContactPage />} /> */}
               <Route path="/samPage" exact render={() => <SamPage />} />
               <Route path="/santiPage" exact render={() => <SantiPage />} />
               <Route path="/martinPage" exact render={() => <MartinPage />} />
