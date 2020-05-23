@@ -38,7 +38,7 @@
     /* border-radius: 0 0 0 100px; */
     height: 100%;
     width: 0px;
-    position: absolute;
+    position: fixed;
     z-index: 2000;
     top: 0;
     left: 0;
@@ -63,7 +63,7 @@
 }
 
 .sideMenu .close {
-    position: relative;
+    position: absolute;
     top: 0;
     /* right: 10px; */
     font-size: 30px;
@@ -75,13 +75,13 @@
 /* Side Nav Hover */
 .sm-wrapper a:after {
     /* z-index: 1; */
-    position: relative;
+    position: absolute;
     left: 0%;
     width: 0;
     height: 50px;
     background: #ffac01;
     content: '';
-    transition: width 0.25s ease-in-out;
+    transition: width 0.15s ease-in-out;
     text-decoration: none;
 }
 

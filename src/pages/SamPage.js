@@ -3,7 +3,7 @@ import '../css/portfolio.css';
 import '../css/responsive.css';
 import '../css/ionicons.css';
 
-import picture from '../images/profile-1-250x250.jpg';
+import profileImg from '../images/profile-1-250x250.jpg';
 import ProfilePage from '../components/ProfilePage.js';
 
 import proj1 from '../images/portfolio-1-600x400.jpg';
@@ -20,7 +20,7 @@ export default class SamPage extends React.Component {
             address: '5100 coe ave spc 38',
             phoneNumber: '(831) 521-0869',
             email: 'samlaitha@gmail.com',
-            linkedin: '',
+            linkedin: 'https://www.linkedin.com/in/srangsan-laitha-192b71123/',
             gitHub: '',
             picture: '',
         }
@@ -29,11 +29,15 @@ export default class SamPage extends React.Component {
     render() {
         return(
             <div>
-               
-            <div>
-                <ProfilePage/>
+                <ProfilePage 
+                    profileImg={profileImg}
+                    name={this.state.name}
+                    address={this.state.address}
+                    phoneNumber={this.state.phoneNumber}
+                    email={this.state.email}
+                    linkedin={this.state.linkedin}
+                />
             </div>
-        </div>
         );
     }
 }
