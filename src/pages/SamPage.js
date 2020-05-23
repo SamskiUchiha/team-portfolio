@@ -30,7 +30,6 @@ export default class SamPage extends React.Component {
         return(
             <div>
                
-
             <div>
                 <ProfilePage/>
             </div>
