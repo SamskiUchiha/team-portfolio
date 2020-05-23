@@ -10,12 +10,17 @@
 }
 
 .menu-pointer {
-    /* width: 0; */
-    /* top: 0; */
+    width: 0; 
+    top: 0;
     font-size: 25px;
     cursor: pointer;
     color: #5b5b5b;
     padding-right: 2em;
+}
+
+.menu-pointer-close {
+    color: #fffdfd;
+    padding-left: 2em;
 }
 
 .close {

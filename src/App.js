@@ -58,7 +58,7 @@ class App extends React.Component {
           <div id="sideMenu" className="sideMenu">  
 
             <div className="sm-wrapper">
-            <div className="menu-pointer"  onClick={this.toggleSM}>&#9776;</div>
+            <div className="menu-pointer menu-pointer-close"  onClick={this.toggleSM}>&#9776;</div>
               {/* <div className="logo"><img style={{height:'100px',width:'100px'}} src={logo} alt="logo_image" /></div> */}
               
               <Link className="nav-link" to="/"> Home</Link>
