@@ -12,6 +12,7 @@ import SamPage from './pages/SamPage.js';
 import SantiPage from './pages/SantiPage.js';
 import MartinPage from './pages/MartinPage.js';
 import AntonioPage from './pages/AntonioPage.js';
+import { bold } from 'ansi-colors';
 
 class App extends React.Component {
 
@@ -77,7 +78,7 @@ class App extends React.Component {
           <Navbar className="nav-wrapper" style={{backgroundColor: "#FFFFFF", position: "sticky"}} fixed="top">
             <Container className="wrapper-nav">
             <div className="menu-pointer"  onClick={this.toggleSM}>&#9776;</div>
-            <Navbar.Brand><span className="brand-name">Portfolio<span style={{color: "blue"}}>.</span></span></Navbar.Brand>
+            <Navbar.Brand><span className="brand-name">Portfolio<span style={{fontSize: 50, color: "blue"}}>.</span></span></Navbar.Brand>
               
             </Container>
               {/* <Navbar.Toggle />
