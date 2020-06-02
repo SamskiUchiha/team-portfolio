@@ -3,9 +3,10 @@ import '../css/portfolio.css';
 import '../css/responsive.css';
 import '../css/ionicons.css';
 
-import profileImg from '../images/profile-1-250x250.jpg';
+import ProfileImg from '../images/sam_image.jpg';
+import BackgroundImg from '../images/sam_background.jpg';
 
-import ProfilePage from '../components/ProfilePage.js';
+import ProfileSection from '../components/ProfileSection.js';
 import AboutSection from '../components/AboutSection.js';
 import ProjectSection from '../components/ProjectSection';
 
@@ -41,8 +42,9 @@ export default class SamPage extends React.Component {
     render() {
         return(
             <div>
-                <ProfilePage 
-                    profileImg={profileImg}
+                <ProfileSection 
+                    profileImg={ProfileImg}
+                    BackgroundImg={BackgroundImg}
                     name={this.state.name}
                     address={this.state.address}
                     phoneNumber={this.state.phoneNumber}
@@ -56,6 +58,7 @@ export default class SamPage extends React.Component {
                 />
 
                 <ProjectSection/>
+                
             </div>
         );
     }

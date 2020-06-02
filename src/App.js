@@ -6,13 +6,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
 import HomePage from './pages/HomePage.js';
-import ContactPage from './pages/ContactPage.js';
-import AboutPage from './pages/AboutPage.js';
+// import ContactPage from './pages/ContactPage.js';
+// import AboutPage from './pages/AboutPage.js';
 import SamPage from './pages/SamPage.js';
 import SantiPage from './pages/SantiPage.js';
 import MartinPage from './pages/MartinPage.js';
 import AntonioPage from './pages/AntonioPage.js';
-import { bold } from 'ansi-colors';
+
+import FooterSection from './components/FooterSection.js';
 
 class App extends React.Component {
 
@@ -31,16 +32,16 @@ class App extends React.Component {
     }
   }
 
-  openSM() {
-    document.getElementById("sideMenu").style.width = "200px";
-    document.getElementById("pg-content").style.marginRight = "0px";
+  // openSM() {
+  //   document.getElementById("sideMenu").style.width = "200px";
+  //   document.getElementById("pg-content").style.marginRight = "0px";
     
-  }
+  // }
 
-  closeSM() {
-    document.getElementById("sideMenu").style.width = "0";
-    document.getElementById("pg-content").style.marginRight = "0";
-  }
+  // closeSM() {
+  //   document.getElementById("sideMenu").style.width = "0";
+  //   document.getElementById("pg-content").style.marginRight = "0";
+  // }
 
   toggleSM = () => {
     if (document !== null) {
@@ -106,6 +107,8 @@ class App extends React.Component {
    
           </div>
         </body>
+
+        <FooterSection/>
       </Router>
     );
   }

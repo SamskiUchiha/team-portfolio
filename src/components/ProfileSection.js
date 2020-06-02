@@ -2,14 +2,14 @@ import React from 'react';
 import '../css/portfolio.css';
 import '../css/responsive.css';
 
-export default class ProfilePage extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+export default class ProfileSection extends React.Component {
+    // constructor(props) {
+    //     super(props);
+    // }
     render() {
         return(
             <>
-            <section class="intro-section">
+            <section style={{backgroundImage: `url(${this.props.BackgroundImg})` }} class="intro-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-1 col-lg-2"></div>

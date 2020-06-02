@@ -35,6 +35,7 @@
 }
 
 .sideMenu {
+    opacity: 0.95;
     /* border-radius: 0 0 0 100px; */
     height: 100%;
     width: 0px;
@@ -101,14 +102,14 @@
 
 #pg-content {
     transition: margin-left 0.5s;
-    padding: 16px;
+    /* padding: 16px; */
 }
 
 
 .logo {
-    top: 0;
+    /* top: 0; */
     /* left: 5px; */
-    padding: 0 0 0 62px;
+    /* padding: 0 0 0 62px; */
     /* text-align: center; */
 }
 

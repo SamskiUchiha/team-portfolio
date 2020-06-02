@@ -5,9 +5,9 @@ import '../css/responsive.css';
 import SkillsSection from '../components/SkillsSection.js';
 
 export default class AboutSection extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
     render() {
         return(
             <>
