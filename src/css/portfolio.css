@@ -294,7 +294,9 @@ header .downlad-btn:hover {
     position: relative;
     background-size: cover;
     z-index: 1;
-    background-image: url(../images/slider-1-1920x1080.jpg);
+    /* background-image: url(../images/slider-1-1920x1080.jpg); */
+    background-image: url(../images/test1.jpg);
+    background-position-y: 50%;
 }
 
 .intro-section:before {
