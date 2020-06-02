@@ -8,12 +8,14 @@ import BackgroundImg from '../images/sam_background.jpg';
 
 import ProfileSection from '../components/ProfileSection.js';
 import AboutSection from '../components/AboutSection.js';
+import ProjectSection from '../components/ProjectSection';
 
 import proj1 from '../images/portfolio-1-600x400.jpg';
 import proj2 from '../images/portfolio-7-600x800.jpg';
 import proj3 from '../images/portfolio-2-600x400.jpg';
 import proj4 from '../images/portfolio-8-300x400.jpg';
 import proj5 from '../images/portfolio-9-300x400.jpg';
+
 
 export default class SamPage extends React.Component {
     constructor(props) {
@@ -54,6 +56,8 @@ export default class SamPage extends React.Component {
                      personalDescription={this.state.personalDescription}
                      skills={this.state.skills}
                 />
+
+                <ProjectSection/>
                 
             </div>
         );
