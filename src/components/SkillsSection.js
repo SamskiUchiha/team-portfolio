@@ -3,9 +3,9 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import '../css/skills.css';
 
 export default class SkillsSection extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
     renderObject(){
 		return Object.entries(this.props.skills).map(([key, value], i) => {
 			return (
