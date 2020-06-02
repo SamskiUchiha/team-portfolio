@@ -10,12 +10,17 @@
 }
 
 .menu-pointer {
-    /* width: 0; */
-    /* top: 0; */
+    width: 0; 
+    top: 0;
     font-size: 25px;
     cursor: pointer;
     color: #5b5b5b;
     padding-right: 2em;
+}
+
+.menu-pointer-close {
+    color: #fffdfd;
+    padding-left: 2em;
 }
 
 .close {
@@ -24,22 +29,25 @@
 }
 
 .sm-wrapper {
-    margin-top: 80px;
+    margin-top: 90px;
     font-weight: 100;
+    z-index: -1;
 }
 
 .sideMenu {
+    opacity: 0.95;
     /* border-radius: 0 0 0 100px; */
     height: 100%;
     width: 0px;
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 2000;
     top: 0;
     left: 0;
     background-color: #11100f;
     overflow: hidden;
     transition: 0.3s;
     padding-top: 1px;
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0,0.30);
 }
 
 
@@ -52,6 +60,7 @@
     letter-spacing: 2px;
     transition: 0.2s;
     font-size: 20px;
+
 }
 
 .sideMenu .close {
@@ -66,14 +75,14 @@
 
 /* Side Nav Hover */
 .sm-wrapper a:after {
-    z-index: 1;
+    /* z-index: 1; */
     position: absolute;
     left: 0%;
     width: 0;
     height: 50px;
     background: #ffac01;
     content: '';
-    transition: width 0.25s ease-in-out;
+    transition: width 0.15s ease-in-out;
     text-decoration: none;
 }
 
@@ -93,14 +102,14 @@
 
 #pg-content {
     transition: margin-left 0.5s;
-    padding: 16px;
+    /* padding: 16px; */
 }
 
 
 .logo {
-    top: 0;
+    /* top: 0; */
     /* left: 5px; */
-    padding: 0 0 0 62px;
+    /* padding: 0 0 0 62px; */
     /* text-align: center; */
 }
 
@@ -123,12 +132,18 @@
 
 .wrapper-nav {
     justify-content: space-between;
+    z-index: -1;
+    
 }
 
 .nav-wrapper {
-    border-radius: 1000px;
+    
+    z-index: -1;
+    /* border-radius: 1000px; */
+    /* z-index: -2; */
     /* box-shadow: #000000; */
     /* -webkit-box-shadow: -2px 13px 32px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 13px 32px -10px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 32px -10px rgba(0,0,0,0.50); */
+    */
+    box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.30);
 }

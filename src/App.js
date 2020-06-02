@@ -6,12 +6,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
 import HomePage from './pages/HomePage.js';
-import ContactPage from './pages/ContactPage.js';
-import AboutPage from './pages/AboutPage.js';
+// import ContactPage from './pages/ContactPage.js';
+// import AboutPage from './pages/AboutPage.js';
 import SamPage from './pages/SamPage.js';
 import SantiPage from './pages/SantiPage.js';
 import MartinPage from './pages/MartinPage.js';
 import AntonioPage from './pages/AntonioPage.js';
+
+import FooterSection from './components/FooterSection.js';
 
 class App extends React.Component {
 
@@ -30,16 +32,16 @@ class App extends React.Component {
     }
   }
 
-  openSM() {
-    document.getElementById("sideMenu").style.width = "200px";
-    document.getElementById("pg-content").style.marginRight = "0px";
+  // openSM() {
+  //   document.getElementById("sideMenu").style.width = "200px";
+  //   document.getElementById("pg-content").style.marginRight = "0px";
     
-  }
+  // }
 
-  closeSM() {
-    document.getElementById("sideMenu").style.width = "0";
-    document.getElementById("pg-content").style.marginRight = "0";
-  }
+  // closeSM() {
+  //   document.getElementById("sideMenu").style.width = "0";
+  //   document.getElementById("pg-content").style.marginRight = "0";
+  // }
 
   toggleSM = () => {
     if (document !== null) {
@@ -58,15 +60,16 @@ class App extends React.Component {
           <div id="sideMenu" className="sideMenu">  
 
             <div className="sm-wrapper">
+            <div className="menu-pointer menu-pointer-close"  onClick={this.toggleSM}>&#9776;</div>
               {/* <div className="logo"><img style={{height:'100px',width:'100px'}} src={logo} alt="logo_image" /></div> */}
               
               <Link className="nav-link" to="/"> Home</Link>
-              <Link className="nav-link" to="/about"> About</Link>
+              {/* <Link className="nav-link" to="/about"> About</Link> */}
               <Link className="nav-link" to="/samPage"> Sam</Link>
               <Link className="nav-link" to="/santiPage"> Santiago</Link>
               <Link className="nav-link" to="/martinPage"> Martin</Link>
               <Link className="nav-link" to="/antonioPage"> Antonio</Link>
-              <Link className="nav-link" to="/contact"> Contact</Link>
+              {/* <Link className="nav-link" to="/contact"> Contact</Link> */}
             </div>
           </div>
 
@@ -76,7 +79,7 @@ class App extends React.Component {
           <Navbar className="nav-wrapper" style={{backgroundColor: "#FFFFFF", position: "sticky"}} fixed="top">
             <Container className="wrapper-nav">
             <div className="menu-pointer"  onClick={this.toggleSM}>&#9776;</div>
-            <Navbar.Brand><span className="brand-name">Portfolio<span style={{color: "blue"}}>.</span></span></Navbar.Brand>
+            <Navbar.Brand><span className="brand-name">Portfolio<span style={{fontSize: 50, color: "blue"}}>.</span></span></Navbar.Brand>
               
             </Container>
               {/* <Navbar.Toggle />
@@ -94,8 +97,8 @@ class App extends React.Component {
             {/* <img style={{height:'100px',width:'300px'}} src={logo} alt="logo_image" /> */}
               {/* {/* <Route path="/" exact render={() => <WorkflowsPage title={this.state.Workflows.title} />} /> */}
               <Route path="/" exact render={() => <HomePage />} />
-              <Route path="/about" exact render={() => <AboutPage />} />
-              <Route path="/contact" exact render={() => <ContactPage />} />
+              {/* <Route path="/about" exact render={() => <AboutPage />} /> */}
+              {/* <Route path="/contact" exact render={() => <ContactPage />} /> */}
               <Route path="/samPage" exact render={() => <SamPage />} />
               <Route path="/santiPage" exact render={() => <SantiPage />} />
               <Route path="/martinPage" exact render={() => <MartinPage />} />
@@ -104,6 +107,8 @@ class App extends React.Component {
    
           </div>
         </body>
+
+        <FooterSection/>
       </Router>
     );
   }
