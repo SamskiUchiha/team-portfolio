@@ -6,6 +6,8 @@ import Gallery from 'react-photo-gallery';
 import test1 from '../images/test1.jpg';
 import test2 from '../images/test2.jpg';
 
+import ProjectModal from '../modals/ProjectModal.js'
+
 
 const PHOTO_SET = [
     {
@@ -67,7 +69,7 @@ export default class ProjectSection extends React.Component {
                             {/* <!-- col-sm-9 --> */}
                         </div>
                         {/* <!-- row --> */}
-                        <Gallery photos={PHOTO_SET} columns={3} direction={'column'} margin={10}/>
+                        <Gallery photos={PHOTO_SET} columns={3} direction={'column'} margin={10} onClick={ <ProjectModal/> }/>
                     </div>
                     {/* <!-- container --> */}
                 </section>
