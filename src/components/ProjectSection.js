@@ -1,52 +1,20 @@
 import React from 'react';
 import '../css/portfolio.css';
 import '../css/responsive.css';
-import Gallery from 'react-photo-gallery';
 
-import test1 from '../images/test1.jpg';
-import test2 from '../images/test2.jpg';
+import ProjectPhotos from '../components/ProjectPhotos.js'
 
-import ProjectModal from '../modals/ProjectModal.js'
-
-
-const PHOTO_SET = [
-    {
-      src: test1,
-      width: 1,
-      height: 1
-    },
-    {
-      src: test2,
-      width: 1,
-      height: 1
-    },
-    {
-        src: test1,
-        width: 1,
-        height: 1
-    },
-    {
-        src: test2,
-        width: 1,
-        height: 1
-    },
-    {
-        src: test1,
-        width: 1,
-        height: 1
-    },
-    {
-        src: test2,
-        width: 1,
-        height: 1
-    }
-  ];
 
 
 export default class ProjectSection extends React.Component {
     constructor(props) {
         super(props);
     }
+
+    test() {
+        alert("Works");
+    }
+
     render() {
         return(
             <>
@@ -69,7 +37,7 @@ export default class ProjectSection extends React.Component {
                             {/* <!-- col-sm-9 --> */}
                         </div>
                         {/* <!-- row --> */}
-                        <Gallery photos={PHOTO_SET} columns={3} direction={'column'} margin={10} onClick={ <ProjectModal/> }/>
+                       <ProjectPhotos/>
                     </div>
                     {/* <!-- container --> */}
                 </section>
