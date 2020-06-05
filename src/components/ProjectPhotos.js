@@ -17,38 +17,47 @@ export default class ProjectPhotos extends React.Component {
 
                 <div class="row text-center text-lg-left">
 
-                <div class="col-xl-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-3 h-100">
-                        <img class="img-fluid img-thumbnail" src={test1} alt=""/>
-                        </a>
-                </div>
-                <div class="col-xl-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-3 h-100">
-                        <img class="img-fluid img-thumbnail" src={test2} alt=""/>
-                        </a>
-                </div>
-                <div class="col-xl-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-3 h-100">
-                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt=""/>
-                        </a>
-                </div>
-                <div class="col-xl-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-3 h-100">
-                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt=""/>
-                        </a>
-                </div>
-                <div class="col-xl-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-3 h-100">
-                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt=""/>
-                        </a>
-                </div>
-                <div class="col-xl-3 col-md-4 col-6">
-                    <a href="#" class="d-block mb-3 h-100">
-                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt=""/>
-                        </a>
-                </div>
+                    <div class="col-sm">
+                        <a href="#" class="d-block mb-3 h-100">
+                            <img class="img-fluid img-thumbnail" src={test1} alt=""/>
+                            </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="#" class="d-block mb-3 h-100">
+                            <img class="img-fluid img-thumbnail" src={test2} alt=""/>
+                            </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="#" class="d-block mb-3 h-100">
+                            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt=""/>
+                            </a>
+                    </div>
+
+                    
                 
                 </div>
+
+                <div class="row text-center text-lg-left">
+
+<div class="col-sm">
+    <a href="#" class="d-block mb-3 h-100">
+        <img class="img-fluid img-thumbnail" src={test1} alt=""/>
+        </a>
+</div>
+<div class="col-sm">
+    <a href="#" class="d-block mb-3 h-100">
+        <img class="img-fluid img-thumbnail" src={test2} alt=""/>
+        </a>
+</div>
+<div class="col-sm">
+    <a href="#" class="d-block mb-3 h-100">
+        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt=""/>
+        </a>
+</div>
+
+
+
+</div>
 
                 </div>
         );
