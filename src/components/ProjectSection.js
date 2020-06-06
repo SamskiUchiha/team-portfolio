@@ -24,7 +24,7 @@ export default class ProjectSection extends React.Component {
                             <div class="col-sm-12 col-md-3">
                                 <div class="heading">
                                     <h3><b>Projects</b></h3>
-                                    {/* <h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6> */}
+                                    <h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
                                 </div>
                             </div>
                             {/* <!-- col-sm-3 --> */}
@@ -39,7 +39,7 @@ export default class ProjectSection extends React.Component {
                         {/* <!-- row --> */}
                     </div>
                     {/* <!-- container --> */}
-                    
+
                     <ProjectPhotos/>
                 </section>
                 {/* <!-- about-section --> */}
