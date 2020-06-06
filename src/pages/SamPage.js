@@ -8,7 +8,8 @@ import BackgroundImg from '../images/sam_background.jpg';
 
 import ProfileSection from '../components/ProfileSection.js';
 import AboutSection from '../components/AboutSection.js';
-import ProjectSection from '../components/ProjectSection';
+import ProjectSection from '../components/ProjectSection.js';
+import EducationSection from '../components/EducationSection.js';
 
 import proj1 from '../images/portfolio-1-600x400.jpg';
 import proj2 from '../images/portfolio-7-600x800.jpg';
@@ -52,12 +53,14 @@ export default class SamPage extends React.Component {
                     linkedin={this.state.linkedin}
                 />
 
+                <ProjectSection/>
+
                 <AboutSection
                      personalDescription={this.state.personalDescription}
                      skills={this.state.skills}
                 />
 
-                <ProjectSection/>
+                <EducationSection/>
                 
             </div>
         );
