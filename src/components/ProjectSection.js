@@ -40,7 +40,7 @@ export default class ProjectSection extends React.Component {
                     </div>
                     {/* <!-- container --> */}
 
-                    <ProjectPhotos/>
+                    <ProjectPhotos project={this.props.project}/>
                 </section>
                 {/* <!-- about-section --> */}
             </>

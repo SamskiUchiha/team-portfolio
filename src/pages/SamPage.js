@@ -17,6 +17,9 @@ import proj3 from '../images/portfolio-2-600x400.jpg';
 import proj4 from '../images/portfolio-8-300x400.jpg';
 import proj5 from '../images/portfolio-9-300x400.jpg';
 
+import test1 from '../images/test1.jpg';
+import test2 from '../images/test2.jpg';
+
 
 export default class SamPage extends React.Component {
     constructor(props) {
@@ -35,6 +38,11 @@ export default class SamPage extends React.Component {
                 {name: 'WEB DESIGN', percent: '75%', number: 75},
                 {name: 'SWIFT', percent: '80%', number: 80},
                 {name: 'REACT.JS', percent: '70%', number: 70},
+            ],
+            project: [
+                {projectName: 'IOS', source: proj1, description: 'Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. Lorem ipsum dolor sit amet,'},
+                {projectName: 'Agflow', source: test1, description: 'Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. Lorem ipsum dolor sit amet,'},
+                {projectName: 'Web Design', source: proj3, description: 'Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. Lorem ipsum dolor sit amet,'},
             ]
               
         }
@@ -53,7 +61,9 @@ export default class SamPage extends React.Component {
                     linkedin={this.state.linkedin}
                 />
 
-                <ProjectSection/>
+                <ProjectSection 
+                    project={this.state.project}
+                />
 
                 <AboutSection
                      personalDescription={this.state.personalDescription}
