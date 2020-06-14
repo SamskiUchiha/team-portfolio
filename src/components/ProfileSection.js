@@ -10,7 +10,7 @@ export default class ProfileSection extends React.Component {
         return(
             <>
             <section style={{backgroundImage: `url(${this.props.BackgroundImg})` }} class="intro-section">
-                <div class="container">
+                <div class="container container-intro">
                     <div class="row">
                         <div class="col-md-1 col-lg-2"></div>
                         <div class="col-md-10 col-lg-8">
