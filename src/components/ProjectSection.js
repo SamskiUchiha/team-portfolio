@@ -37,9 +37,9 @@ export default class ProjectSection extends React.Component {
                             {/* <!-- col-sm-9 --> */}
                         </div>
                         {/* <!-- row --> */}
-                       <ProjectPhotos/>
                     </div>
                     {/* <!-- container --> */}
+                    <ProjectPhotos/>
                 </section>
                 {/* <!-- about-section --> */}
             </>
